@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple, affordable weeknight dinner recipes for busy home cooks.">
+  <title>Budget Bites | Weeknight Dinners That Stretch Further</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Budget Bites home">
+        <span class="brand-mark">BB</span>
+        <span>Budget Bites</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#recipes">Recipes</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Good food. Smaller grocery bills.</p>
+          <h1>Big flavor for ordinary weeknights.</h1>
+          <p class="hero-copy">Practical recipes built around affordable staples, short prep times, and the kind of comfort that brings everyone back to the table.</p>
+          <a class="button button-dark" href="#recipes">Browse recipes <span aria-hidden="true">&darr;</span></a>
+        </div>
+        <div class="hero-note" aria-label="This week's cooking note">
+          <span class="note-label">This week's note</span>
+          <p>“A well-stocked pantry is the easiest way to make dinner feel possible.”</p>
+          <span class="note-signoff">Start with what you have.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section" id="categories" aria-labelledby="category-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Find your starting point</p>
+            <h2 id="category-title">Cook by category</h2>
+          </div>
+          <p class="section-intro">Simple ideas for the nights when you need dinner to work.</p>
+        </div>
+        <div class="category-list" role="group" aria-label="Recipe categories">
+          <button class="category-button is-active" type="button" data-category="all">All recipes</button>
+          <button class="category-button" type="button" data-category="one-pan">One-pan</button>
+          <button class="category-button" type="button" data-category="vegetarian">Vegetarian</button>
+          <button class="category-button" type="button" data-category="under-30">Under 30 minutes</button>
+          <button class="category-button" type="button" data-category="freezer-friendly">Freezer-friendly</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipes-section" id="recipes" aria-labelledby="recipes-title">
+      <div class="container">
+        <div class="recipe-toolbar">
+          <div>
+            <p class="eyebrow">The weeknight collection</p>
+            <h2 id="recipes-title">Recipes worth repeating</h2>
+          </div>
+          <label class="search-label" for="recipe-search">
+            <span>Search recipes</span>
+            <input id="recipe-search" type="search" placeholder="Try “beans” or “pasta”" autocomplete="off">
+          </label>
+        </div>
+        <div class="recipe-grid" id="recipe-grid">
+          <article class="recipe-card" data-category="one-pan under-30" data-search="crispy chickpea tacos vegetarian under 30">
+            <div class="card-accent accent-gold" aria-hidden="true">01</div>
+            <div class="card-content">
+              <p class="card-meta">One-pan · 25 min</p>
+              <h3><a href="recipes/crispy-chickpea-tacos.html">Crispy Chickpea Tacos</a></h3>
+              <p>Spiced chickpeas, crunchy cabbage, and a bright lime crema tucked into warm tortillas.</p>
+              <a class="text-link" href="recipes/crispy-chickpea-tacos.html">View recipe <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="vegetarian freezer-friendly" data-search="tomato lentil soup vegetarian freezer friendly">
+            <div class="card-accent accent-coral" aria-hidden="true">02</div>
+            <div class="card-content">
+              <p class="card-meta">Vegetarian · 40 min</p>
+              <h3><a href="recipes/tomato-lentil-soup.html">Tomato Lentil Soup</a></h3>
+              <p>A cozy, protein-rich pot of soup that tastes even better after a night in the fridge.</p>
+              <a class="text-link" href="recipes/tomato-lentil-soup.html">View recipe <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="one-pan under-30" data-search="lemon garlic chicken rice one pan under 30">
+            <div class="card-accent accent-blue" aria-hidden="true">03</div>
+            <div class="card-content">
+              <p class="card-meta">One-pan · 30 min</p>
+              <h3><a href="recipes/lemon-garlic-chicken.html">Lemon Garlic Chicken</a></h3>
+              <p>Juicy chicken thighs and buttery rice come together in one skillet with pantry staples.</p>
+              <a class="text-link" href="recipes/lemon-garlic-chicken.html">View recipe <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="vegetarian under-30" data-search="pesto white bean pasta vegetarian under 30">
+            <div class="card-accent accent-green" aria-hidden="true">04</div>
+            <div class="card-content">
+              <p class="card-meta">Vegetarian · 20 min</p>
+              <h3><a href="recipes/pesto-white-bean-pasta.html">Pesto White Bean Pasta</a></h3>
+              <p>Silky pesto, creamy beans, and pasta make a fast dinner with plenty of staying power.</p>
+              <a class="text-link" href="recipes/pesto-white-bean-pasta.html">View recipe <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No recipes match that search yet. Try a different ingredient or category.</p>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <p class="eyebrow">A little more from the kitchen</p>
+        <div>
+          <h2 id="about-title">Recipes that respect your time and your budget.</h2>
+          <p>Budget Bites is a growing collection of practical dinners made for real schedules: accessible ingredients, honest instructions, and no unnecessary fuss.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p><strong>Budget Bites</strong> &middot; Make a little, make it count.</p>
+      <p>&copy; 2026 Budget Bites</p>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
